@@ -1,0 +1,14 @@
+.container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  margin: 10 auto;
+  min-height: 100vh;
+}
+.section-1{
+  width: 350px;
+  background-color:#121A28;
+  height: 100vh;
+  margin-right: auto;
+}
