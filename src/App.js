@@ -10,14 +10,14 @@ import locationIcon from './images/location.svg';
 import './App.css';
 function App() {
   return (
-    <div className="container" style={{backgroundColor:'#0A111E' }}>
+    <div className="container" >
 
       
       <div className="section-1">
         <div className='top-section'>
         <div className='search-container'>
         <input type="text" name='query' placeholder='Search...' />
-        <img className='searchimage' src={searchIcon} alt="Search Icon " height={40} width={40} />
+        <img className='searchimage' src={searchIcon} alt="Search Icon " height={30} width={30} />
         
         </div>
 
@@ -37,30 +37,37 @@ function App() {
 
 
       <div className='cloudimage' >
-      <img  src={cloudIcon} alt="Cloud Icon " height={26} width={26} />
+      <img  src={cloudIcon} alt="Cloud Icon " height={18} width={18} />
       <p className='cloud-details'>Partially cloudy</p>
       </div>
 
       <div className='waterimage'>
-      <img  src={waterIcon} alt="Water Icon " height={26} width={26} />
+      <img  src={waterIcon} alt="Water Icon " height={18} width={18} />
       <p className='water-details'>Misty</p>
       </div>
 
       <div className='sunimage'>
-      <img  src={sunIcon} alt="Sun Icon " height={26} width={26} />
+      <img  src={sunIcon} alt="Sun Icon " height={18} width={18} />
       <p className='sun-details'>21 °C</p>
       </div>
 
       
-      
-
       </div>
       <div className='locationimage'>
-      <img  src={locationIcon} alt="Location Icon " height={26} width={26} />
-      <p className='location-details'>Manchi,    Kundamkuzhy</p>
+      <img  src={locationIcon} alt="Location Icon " height={18} width={18} />
+      <p  className='location-details'>Manchi,    Kundamkuzhy</p>
       </div>
       </div>
       </div>
+
+      <div className="section-2">
+      <div className='title'>
+        <p className='today'> Today </p>
+        <p className='week'> Week</p>
+
+</div>
+      </div>
+
       </div>
     
   );

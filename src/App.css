@@ -3,23 +3,18 @@
 
 .container{
   display:flex;
-  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;  
-  height: 100vh;
-
+  background-color: red;
 }
 .section-1{
-  width: 350px;
+  width: 310px;
   background-color:#121A28;
   display: flex;
   flex-direction: column;
   justify-content:space-between;
   align-items: center;
-  padding-top: 50px;
-  height: 100%;
-
-
+  padding-top: 35px;
 }
 .top-section{
   border-bottom: 1px;
@@ -30,12 +25,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
+
 }
 input{
   padding: 10px 10px;
-  width: 240px;
-  font-size: 20px;
+  width: 210px;
+  font-size: 15px;
   outline: none;
   border-bottom-left-radius: 7px;
   border-top-left-radius: 7px;
@@ -45,15 +41,20 @@ input{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+
+  
 }
 .searchimage{
   background-color: dodgerblue;
   border-radius: 2px;
-  padding: 1px;
+  padding: 5px;
+
+
 }
 .weatherimage{
-  width: 210px;
-  height: 180px;
+  width: 190px;
+  height: 150px;
 }
 .temp-date{
 align-self:flex-start;
@@ -67,15 +68,16 @@ margin-top: -35px;
 }
 .temp{
   margin-bottom: 0;
-  font-size: 50px;
+  font-size: 40px;
 
 }
 h1{
   font-weight: 400;
 }
 .date{
-  margin-top: 0;
-  font-size: 20px;
+  margin-top: -4px;
+  margin-bottom: -5px;
+  font-size: 15px;
 
 
 }
@@ -85,23 +87,31 @@ h1{
 }
 .details{
   display: flex;
-  justify-content:center;
+  justify-content:flex-start;
   align-items:flex-start;
   flex-direction: column;
+  gap: 10px;
+
 
 }
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:#0A111E;
+  height: 100vh;
+  max-height: 100%;
+  
 }
+
 
 .bottom-section{
   display: flex;
   justify-content:space-between;
   align-items:flex-start;
   flex-direction: column;
-  height: 100%;
   width: 100%;
   padding-left: 48px;
   padding-top: 10px;
@@ -114,9 +124,43 @@ body {
   align-items:center;
   gap: 12px;
   color: white;
+}
+.cloud-details, .water-details,.sun-details,.location-details{
 
+}
+.location-details{
+font-size: 14px;
+}
+.details p{
+margin: 0;
 
-  }
+font-size: 12px;
 
+}
+.section-2{
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+}
+.title{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 75px ;
+  color: white;
+  font-weight: 300px;
+  cursor: pointer;
+  
+}
+p:active{
+  color: rgba(9, 255, 230, 0.978);
+  
+}
+.today{
+  padding-left: 55px;
+}
 
 
