@@ -5,6 +5,9 @@ import cloudIcon from './images/cloud.svg';
 import waterIcon from './images/water.svg';
 import sunIcon from './images/sun.svg';
 import locationIcon from './images/location.svg';
+import Day from './Day';
+import Today from './Today';
+
 
 
 import './App.css';
@@ -17,7 +20,7 @@ function App() {
         <div className='top-section'>
         <div className='search-container'>
         <input type="text" name='query' placeholder='Search...' />
-        <img className='searchimage' src={searchIcon} alt="Search Icon " height={30} width={30} />
+        <img className='searchimage' src={searchIcon} alt="Search Icon " height={39} width={39} />
         
         </div>
 
@@ -64,11 +67,35 @@ function App() {
       <div className='title'>
         <p className='today'> Today </p>
         <p className='week'> Week</p>
+      </div>
+      <div className='week-details'> 
+        <Day day={"tuesday"} img={ cloudIcon} temp={'30.9'}></Day>
+        <Day day={"wednesday"} img={ cloudIcon} temp={'30.9'}></Day>
+        <Day day={"thursday"} img={ cloudIcon} temp={'30.9'}></Day>
+        <Day day={"friday"} img={ cloudIcon} temp={'30.9'}></Day>
+        <Day day={"saturday"} img={ cloudIcon} temp={'30.9'}></Day>
+        <Day day={"sundayday"} img={ cloudIcon} temp={'30.9'}></Day>
+        <Day day={"monday"} img={ cloudIcon} temp={'30.9'}></Day>
 
-</div>
+      
+      </div>
+      <p className='todays-highlights'>Today's Highlights</p>
+
+      <div className='today-details'> 
+        <Today startValue={'UV Index'} middleValue={'3'} endValue={'moderate'} ></Today>
+        <Today startValue={'UV Index'} middleValue={'3'} endValue={'moderate'} ></Today>
+        <Today startValue={'UV Index'} middleValue={'3'} endValue={'moderate'} ></Today>
+        <Today startValue={'UV Index'} middleValue={'3'} endValue={'moderate'} ></Today>
+        <Today startValue={'UV Index'} middleValue={'3'} endValue={'moderate'} ></Today>
+        <Today startValue={'UV Index'} middleValue={'3'} endValue={'moderate'} ></Today>
+
+      
+      </div>
       </div>
 
+
       </div>
+
     
   );
 }
